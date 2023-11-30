@@ -1,0 +1,286 @@
+body {
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: rgb(196, 227, 255);
+    font-family:'IndieFlower';
+    max-width: 100rem;
+}
+
+header {
+    background-color: rgb(33, 33, 33);
+    text-decoration: none;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+#menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    gap: 2.2rem;
+    margin-left: 58rem;
+    padding-bottom: 1rem;
+    margin-top: 4.5rem;
+}
+
+#menu li {
+    font-size: 1.3rem;
+    gap: 2rem;
+}
+
+#header-logo img  {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+    margin-left: 2rem;
+    position: absolute;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu a:hover {
+    color: rgb(203, 203, 203);
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu.active {
+    display: flex;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.459)),url(../gallery-image-french-press-classic-mugs-spring23.jpeg);
+    min-height: 5rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5.5rem;
+    object-fit: contain;
+    padding-bottom: 4.5rem;
+}
+
+.hero h1, .hero p {
+    margin-bottom: 4rem;
+    align-self: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.725);
+    color: white;
+    padding: 1.5rem;
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+
+.hero p {
+    font-size: 25px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 2.2rem;
+}
+
+#story {
+    background-color: rgb(255, 208, 232);
+    align-self: center;
+    padding: 1rem 1rem;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    padding: 0.6rem;
+
+}
+
+.flex-container div {
+    flex: 1;
+    padding: 1rem;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.flex-container a {
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
+
+button {
+    background-color: rgb(33, 33, 33);
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: 0rem;
+
+}
+
+#gallery {
+    text-align: center;
+    margin-right: 3rem;
+}
+
+#gallery img  {
+    width: 25rem;
+    height: 25rem;
+    object-fit: contain;
+}
+
+#products img  {
+    width: 25rem;
+    height: 25rem;
+    object-fit: contain;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 5.3rem;
+    row-gap: 1rem;
+    object-fit: contain;
+}
+
+.newsletter {
+    background-color: rgb(255, 208, 232);
+    align-self: center;
+}
+
+.newsletter h8 {
+    font-size: 3rem;
+
+}
+
+.newsletter p {
+    padding: 0rem 5rem;
+
+}
+
+
+.newsletter-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6rem 2rem;
+
+}
+
+.newsletter-flex-container div {
+    flex: 1;
+    padding: 1rem;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#newsletter-image img {
+    width: 45rem;
+    height: 43rem;
+    margin: 0;
+    padding: 0%;
+    object-fit: contain;
+}
+
+input {
+    padding: 0.6rem 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+footer {
+    padding-bottom: 1rem;
+    background-color: rgb(33, 33, 33);
+    text-decoration: none;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Phone Screens */
+@media screen and (min-width: 380px) and (max-width: 420px) {
+    #menu-toggle {
+        display: inline-block;
+        font-size: 3rem;
+        margin-left: 25rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu {
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background-color: aliceblue;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+
+    #menu.active {
+        display: flex;
+    }
+
+    #menu a {
+        color: rgb(33, 33, 33);
+
+    }
+    
+
+    #header-logo img  {
+        width: 6rem;
+        height: 6rem;
+        object-fit: contain;
+        margin-left: 2rem;
+        position: absolute;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 3rem;
+        row-gap: 1rem;
+        object-fit: contain;
+    }
+
+    h6 {
+        margin-left: 2rem;
+
+    }
+
+
+}
+
+/* Tablet Screens */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* Small Desktop Screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
